@@ -13,12 +13,8 @@ import { envVariables } from "./config/envVariables.js";
 
 import authRoutes from "./routes/auth.routes.js";
 
-import dotenv from "dotenv";
-
-dotenv.config();
-
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: envVariables.OPENAI_API_KEY,
 });
 
 const app = express();

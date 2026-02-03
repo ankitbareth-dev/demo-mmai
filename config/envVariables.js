@@ -19,4 +19,5 @@ export const envVariables = {
   DIRECT_URL: requireEnvVar("DIRECT_URL"),
   GOOGLE_CLIENT_ID: requireEnvVar("GOOGLE_CLIENT_ID"),
   NODE_ENV: process.env.NODE_ENV || "development",
+  OPENAI_API_KEY: requireEnvVar("OPENAI_API_KEY"),
 };
